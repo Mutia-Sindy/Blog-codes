@@ -1,0 +1,481 @@
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.post {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 20px;
+    width: 70%;
+}
+.love{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-right: 20px;
+    width: 50%;
+}
+.post-image {
+    width: 100px; /* Adjust as needed 
+    height: 30%;
+    margin-right: 15px;
+    border-radius: 5px; /* Optional: for rounded corners 
+}
+
+aside {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 25%;
+}
+/* Global Styles 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Sidebar Container 
+.container {
+    display: flex;
+    justify-content: flex-end; /* Aligns the sidebar to the right 
+    padding: 20px;
+}
+
+.sidebar {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Search Bar 
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #002244;
+}
+
+/* Categories 
+.categories h2 {
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.categories ul {
+    list-style-type: none;
+}
+
+.categories ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #e0f7ff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.categories ul li:hover {
+    background-color: #cfefff;
+}
+
+/* Responsive Design 
+@media (max-width: 768px) {
+    .container {
+        justify-content: center; /* Sidebar moves to the center on smaller screens 
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%; /* Sidebar takes full width on very small screens 
+    }
+
+    .search-bar input {
+        width: 60%; /* Adjust input size for mobile 
+    }
+
+    .search-bar button {
+        padding: 10px 15px; /* Adjust button padding for mobile 
+    }
+}
+*/
+/* Global Styles */
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+/* Background Image */
+.hero-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 43vh;
+  background-image: url('download (7).jpg'); /* Replace with your desired background image */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+
+/* Header Styles 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}*/
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #008000;
+  text-align: left;
+}
+
+.blog-title {
+  color: #ffa500;
+  font-size: 24px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation a {
+  color: #ffa500;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.navigation a.active {
+  font-weight: bold;
+}
+
+.navigation .circle {
+  width: 10px;
+  height: 10px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* Social Media Icons */
+.social-media {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.social-media img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 150px;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .blog-title {
+    font-size: 18px;
+    bottom: 10px;
+  }
+
+  .navigation {
+    bottom: 10px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+    margin-right: 10px;
+  }
+
+  .navigation .circle {
+    width: 8px;
+    height: 8px;
+    margin-right: 10px;
+  }
+
+  .social-media {
+    top: 10px;
+    right: 10px;
+  }
+
+  .social-media img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .main-content {
+    margin-top: 80px;
+  }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  /*header image */
+  /* Hero Image */
+  
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Article Container */
+  .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 65%;
+  }
+  
+  .article-item {
+    
+    border-radius: 8px;
+    width: 48%;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    height: 200px;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .description-container {
+    padding: 20px;
+  }
+  
+  /* Sidebar Container */
+  .sidebar-container {
+    width: 30%;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  .search-container input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    width: 25%;
+    padding: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .categories-container {
+    margin-bottom: 20px;
+  }
+  
+  .categories-container h3 {
+    margin-top: 0;
+  }
+  
+  .category-item {
+    background-color: rgba(51, 153, 51, 0.2);
+    color: #339933;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .recent-posts-container {
+    margin-bottom: 20px;
+  }
+  
+  .recent-posts-container h3 {
+    margin-top: 0;
+  }
+  
+  .recent-post-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .recent-post-item .image-container {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  
+  .recent-post-item .description-container {
+    flex-grow: 1;
+    padding: 0;
+  }
+  
+  .recent-post-item .description-container h4 {
+    margin-top: 0;
+    color: #ff8c00;
+  }
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+    .hero-image {
+      height: 150px;
+    }
+
+    .header {
+      padding: 10px;
+    }
+
+    .logo {
+      font-size: 18px;
+    }
+
+    .blog-title {
+      font-size: 18px;
+      bottom: 10px;
+    }
+
+    .navigation {
+      bottom: 10px;
+    }
+
+    .navigation a {
+      font-size: 14px;
+      margin-right: 10px;
+    }
+
+    .navigation .circle {
+      width: 8px;
+      height: 8px;
+      margin-right: 10px;
+    }
+
+    .social-media {
+      top: 10px;
+      right: 10px;
+    }
+
+    .social-media img {
+      width: 24px;
+      height: 24px;
+    }
+
+    .main-content {
+      margin-top: 80px;
+    }
+  }
+
+   /* Responsive Styles */
+   @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+
+    .article-container {
+      width: 100%;
+    }
+
+    .sidebar {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
